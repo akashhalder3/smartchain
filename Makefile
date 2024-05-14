@@ -12,15 +12,15 @@ GOBIN = ./build/bin
 GO ?= latest
 GORUN = env GO111MODULE=on go run
 
-pnsoft:
+chipvault:
 	$(GORUN) build/ci.go install ./cmd/geth
-	mv $(GOBIN)/geth $(GOBIN)/pnsoft
+	mv $(GOBIN)/geth $(GOBIN)/chipvault
 	@echo "Done building."
-	@echo "Run \"$(GOBIN)/pnsoft\" to launch pnsoft."
+	@echo "Run \"$(GOBIN)/chipvault\" to launch chipvault."
 
 all:
 	$(GORUN) build/ci.go install ./cmd/geth
-	mv $(GOBIN)/geth $(GOBIN)/pnsoft
+	mv $(GOBIN)/geth $(GOBIN)/chipvault
 
 android:
 	$(GORUN) build/ci.go aar --local

@@ -1,47 +1,44 @@
-## Coinex Smart Chain
-CoinEx is committed to product development and service improvement, and contributes its share to the infrastructure of the blockchain world. `CSC` is a small part of the development prospect.
+## ChipVault Smart Chain
+ChipVault places a strong emphasis on innovation in both product development and service enhancement, actively contributing to the ongoing evolution of the blockchain ecosystem. Within the scope of this commitment, `CHIP` constitutes merely a portion of its comprehensive developmental strategy.
 
-CoinEx Smart Chain (CSC) is a smart contract chain that supports up to 101 validators. Aside from shorter time for block generation and lower fees for transactions, `CSC` is also fully compatible with Ethereum virtual machine(EVM) and protocols while supporting high-performance transactions. And to achieve that, the easiest solution is to develop based on go-ethereum fork, as we respect the great work of Ethereum very much.
+ChipVault Smart Chain (CHIP) represents a smart contract chain accommodating a maximum of 101 validators. In addition to facilitating quicker block generation times and reduced transaction fees, CHIP seamlessly integrates with the Ethereum virtual machine (EVM) and protocols, enabling high-performance transaction processing. To realize these capabilities, the most straightforward approach involves developing upon a fork of go-ethereum, as we hold a deep regard for Ethereum's significant contributions in this domain.
 
-## CSC Features
+## CHIP Features
 
-* Decentralization: Permission-free, anyone can become a validator by staking `CET`.
-* EVM compatibility: Fully compatible with Ethereum virtual machine(EVM), which means that almost all DApps, ecosystem components and tools on Ethereum can be migrated to `CSC` directly or with very small changes.
-* High performance: 600+ TPS, 3s block time
+Here are the points rewritten in a formal manner:
+
+1. **Decentralization:** CHIP prioritizes decentralization, allowing individuals to become validators by staking CHIP without the need for permission.
+2. **EVM Compatibility:** CHIP boasts full compatibility with the Ethereum Virtual Machine (EVM), facilitating seamless migration of almost all decentralized applications (DApps), ecosystem components, and tools from Ethereum with minimal adjustments.
+3. **High Performance:** CHIP demonstrates high performance capabilities, achieving over 600 transactions per second (TPS) with a block time as low as 3 seconds.
 
 ## Native Token
 
-`CET` on `CSC` runs the same way as `ETH`runs on Ethereum, and its main functions are:
+`On ChipVault Smart Chain`, CHIP operates similarly to ETH on Ethereum, serving several key functions:
 
-* As block reward for validators
-* To pay for the gas for transfers and contract calls on `CSC` 
-* To pay for the transaction fees for deploying smart contracts on `CSC`
-* To be delegated to the selected validators
+1. Providing block rewards to validators.
+2. Covering gas fees for transfers and contract executions on `ChipVault Smart Chain`.
+3. Covering transaction fees for deploying smart contracts on `ChipVault Smart Chain`.
+4. Available for delegation to chosen validators.
 
 ## Building the source
 
-For prerequisites and detailed build instructions please read the [Compile](https://docs.coinex.org/#/en-us/node_compile).
+For comprehensive prerequisites and detailed instructions on the build process, please consult the provided documentation.
 
-Building `cetd` requires both a Go (version 1.13 or later) and a C compiler. You can install
-them using your favourite package manager. Once the dependencies are installed, run
+The construction of `chipvault` necessitates the presence of both a Go compiler (version 1.13 or later) and a C compiler. These can be installed using your preferred package manager. Upon successful installation of the dependencies, execute the following command:
 
 ```shell
-make cetd
+make chipvault
 ```
 
-## Running `cetd`
+## Running `chipvault`
 
-Going through all the possible command line flags is out of scope here (please consult our
-[CLI](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)),
-but we've enumerated a few common parameter combos to get you up to speed quickly
-on how you can run your own `cetd` instance.
+A detailed examination of all potential command line flags is beyond the scope of this document (please refer to our CLI documentation at [CLI](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options)). However, we have outlined several common parameter combinations to expedite the process of launching your own `chipvault` instance.
 
 ### Hardware Requirements
 
-* 1T of SSD storage for mainnet, 500G of SSD storage for testnet.
-* 16 cores of CPU and 32 gigabytes of memory (RAM) for mainnet.
-* 4 cores of CPU and 8 gigabytes of memory (RAM) for testnet.
-* A broadband Internet connection with upload/download speeds of at least 10 megabyte per second
+- Mainnet necessitates 1 terabyte (TB) of solid-state drive (SSD) storage, while testnet requires 500 gigabytes (GB) of SSD storage.
+- Mainnet operation mandates 16 CPU cores and 32 gigabytes (GB) of random access memory (RAM), while testnet requires 4 CPU cores and 8 gigabytes (GB) of RAM.
+- A broadband internet connection with a minimum upload and download speed of 10 megabytes per second is indispensable.
 
 ### Full node on the testnet
 
