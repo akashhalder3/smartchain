@@ -278,7 +278,7 @@ func newFaucet(genesis *core.Genesis, port int, enodes []*discv5.Node, network u
 		datadir = filepath.Join(os.Getenv("HOME"), ".faucet")
 	}
 	stack, err := node.New(&node.Config{
-		Name:    "cetd",
+		Name:    "chipvault",
 		Version: params.VersionWithCommit(gitCommit, gitDate),
 		DataDir: datadir,
 		P2P: p2p.Config{

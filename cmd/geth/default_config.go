@@ -47,7 +47,7 @@ Blocks = 20
 Percentile = 60
 
 [Node]
-IPCPath = "cetd.ipc"
+IPCPath = "chipvault.ipc"
 HTTPHost = "localhost"
 NoUSB = true
 InsecureUnlockAllowed = false
@@ -112,7 +112,7 @@ Blocks = 20
 Percentile = 60
 
 [Node]
-IPCPath = "cetd.ipc"
+IPCPath = "chipvault.ipc"
 HTTPHost = "localhost"
 NoUSB = true
 InsecureUnlockAllowed = false
